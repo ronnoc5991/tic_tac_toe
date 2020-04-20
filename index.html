@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <title>Tic-Tac-Toe</title>
+    </head>
+<style>
+
+body{
+    background: #FC466B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+    #container{
+        width: 600px;
+        margin: auto;
+        
+    }
+
+    #title {
+        font-family: 'Courier New', Courier, monospace;
+        font-style: italic;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    h1{
+        font-size: 80;
+        margin-top: 15;
+        margin-bottom: 15;
+    }
+
+    #buttons {
+        display: flex;
+        justify-content: center;
+        margin:auto;
+        margin-top: 20;
+        margin-bottom: 20;
+    }
+
+    #newGameDiv {
+        display: flex; 
+        justify-content: center;
+    }
+
+    #newGame {
+    	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	    background-color:#ffffff;
+	    border-radius:31px;
+	    border:3px solid #dcdcdc;
+	    display:inline-block;
+	    cursor:pointer;
+	    color:#000000;
+	    font-family:Courier New;
+	    font-size:20px;
+	    font-weight:bold;
+	    font-style:italic;
+	    padding:12px 30px;
+	    text-decoration:none;
+	    text-shadow:0px 1px 0px #ffffff;    
+    }
+
+    #newGame:hover {
+	    background-color:#f6f6f6;
+    }
+    
+    #newGame:active {
+	    position:relative;
+	    top:1px;
+    }
+
+    #playarea{
+        width: 79%;
+        height: 60%;
+        margin: auto;
+        margin-top: 50;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .spaces{
+        flex-basis: 31%;
+        height: 31%;
+        font-size: 130;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        border-width: 4px 4px 4px 4px; /* top right bottom left */
+        border-radius: 5%;
+        border-style: solid;
+        border-color: black;
+    }
+
+    #index0, #index1, #index2 {
+        align-self: flex-start;
+    }
+
+    #index3, #index4, #index5 {
+        align-self: center;
+    }
+
+    #index6, #index7, #index8 {
+        align-self: flex-end;
+    }
+
+</style>
+
+<body>
+<div id = "container">
+    <div id="title">
+        <h1>Tic-Tac-Toe</h1>
+    </div>
+    <div id="buttons">
+            <div id="newGameDiv">
+            <button id="newGame">New Game</button>
+            </div>
+        </form>
+    </div>
+    <div id = "playarea">
+        <div id="index0" class="spaces"> </div>
+        <div id="index1" class="spaces"> </div>
+        <div id="index2" class="spaces"> </div>
+        <div id="index3" class="spaces"> </div>
+        <div id="index4" class="spaces"> </div>
+        <div id="index5" class="spaces"> </div>
+        <div id="index6" class="spaces"> </div>
+        <div id="index7" class="spaces"> </div>
+        <div id="index8" class="spaces"> </div>
+    </div>
+</div>
+</body>
+
+<script src= "tic_tac_toe.js"></script>
+</html>
